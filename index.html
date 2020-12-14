@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&family=Ubuntu:wght@700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- awesome fonts -->
+    <script src="https://kit.fontawesome.com/ee20c8329d.js" crossorigin="anonymous"></script>
+
+    <!-- custom css and js -->
+    <link rel="stylesheet" href="gnduranker.css">
+    <!-- <script src="gnduranker.js"></script> -->
+    <script src="index.js"></script>
+
+
+    <!-- browser icon -->
+    <link rel="icon" href="icon/r1logo1neg.png">
+
+    <title>GnduRanker.com</title>
+</head>
+
+<body>
+    <header class="header">
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="index.html"><img class="logo" src="icon/logo.png" alt="logo-img"><a
+                    class="logo-text">GnduRanker</a> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">about</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">rank</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">college</a>
+                            <a class="dropdown-item" href="#">university</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"><i class="fas fa-user-circle footer"></i>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownId">
+                            <a name="nologele" class="dropdown-item d-none" style="cursor: pointer;"
+                                onclick="document.getElementById('login').classList.remove('d-none')">login</a>
+                            <a name="loginele" class="dropdown-item d-none" href="myprofile.html">my profile</a>
+                            <a name="loginele" class="dropdown-item d-none" href="#">settings</a>
+                            <div name="loginele" class="dropdown-divider d-none"></div>
+                            <a name="loginele" class="dropdown-item d-none" href="#" onclick="logout()">logout</a>
+                            <p name="loading" style="cursor: default;" class="m-0 px-4 py-1">loading...</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+
+        <!-- <nav class="navbar navbar-expand-md nav-custom">
+            <a class="navbar-brand nav-dec-none font2" href="#"><img style="width: 50px; margin-left: 50px;" src="icon/imageedit_5_6887025485.png"></a>
+            <a class="navbar-brand nav-dec-none font2" href="#">GNDU<span style="color: #4285F4;">R</span><span style="color: #EA4335;">a</span><span style="color: #FBBC03;">n</span><span style="color: #34A853;">k</span></a> 
+            <button class="navbar-toggler d-lg-none " type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link nav-clicked" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">about</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">rank</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">college</a>
+                            <a class="dropdown-item" href="#">univercity</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form> 
+            </div>
+        </nav> -->
+    </header>
+
+    <!-- Title -->
+    <div class="container-fluid">
+        <section id="title">
+            <div class="input-group mb-3">
+                <input type="text" class=" search-bar form-control " placeholder="Enter Your Roll Number"
+                    aria-label="Enter Your Roll Number" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary search-button" type="button">Button</button>
+                </div>
+            </div>
+            <img class="title-image1" src="icon/bg-2.svg" alt="">
+            <div class="row">
+                <div class="col-lg-6 title-heading">
+
+                    <h1>Welcome to Gndu<d style="color: red;">Ranker</d> Here you can find your Rank</h1>
+                    <h4>know where you stand</h4>
+                    <button type="button" class="btn btn-lg download-button">
+                        Click
+                        Now</button>
+                </div>
+                <div class="col-lg-6">
+                    <img class="title-image" src="icon/imageedit_2_6238063759.png" alt="title-image">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- RankTable Section -->
+
+    <div class="container-fluid ">
+        <section id="RankTable">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img id="img-2" src="icon/undraw_Choose_bwbs.svg" alt="image">
+                </div>
+                <div class="col-lg-8">
+                    <div class="RankerTable ">
+                        <h1><i class="fas fa-medal medal"></i></i>Top ten Rankers</h1>
+                        <div >
+                            <div class="rank-text">#1 VANSHIKA GARG	</div>
+                            <div class="rank-text"> #2	SUCHITA THAKUR </div>
+                            <div class="rank-text"> #3	SHIVAM KUMAR PANDAY	</div>
+                            <div class="rank-text"> #4	NAMAN	</div>
+                            <div class="rank-text"> #5	MAHESH PANDEY	</div>
+                            <div class="rank-text"> #6  AMAN	</div>
+                            <div class="rank-text"> #7	MANISHA JAKHU	</div>
+                            <div class="rank-text"> #8	SHUBHAM KUMAR	</div>
+                            <div class="rank-text"> #9	HIMANSHU ARORA	</div>
+                            <div class="rank-text"> #10	MUKUL SOODEN	</div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+
+    <div class="container-fluid">
+        <section id="QuestionPaper">
+            <div class="row">
+                <div class="col-lg-6 Question-paper-heading">
+                        <h1>Question Papers</h1>
+                        <p>You can download Previous Year Papers here.</p>
+                        <button type="button" class="btn btn-lg download-button">download</button>
+                </div>
+                <div class="col-lg-6">
+                    <img class= "img-3" src="icon/undraw_Documents_re_isxv.svg" alt="">
+                </div>
+            </div>
+        </section>
+        
+    </div>
+
+    <footer>
+        <div class="footer">
+            <a class="footer-text" href="">contact</a><a class="footer-text" href="">Developers</a>
+            <i class="footer-logo fab fa-twitter"></i><i class="footer-logo fab fa-instagram"></i><i class="footer-logo fab fa-facebook-f"></i><i class="footer-logo far fa-envelope"></i>
+            <h6 class="copyright footer-text">@ Copyright 2020 GnduRanker </h6>
+    </footer>
+
+</body>
+
+</html>

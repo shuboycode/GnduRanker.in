@@ -1,0 +1,237 @@
+* {
+    margin-top: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body,
+html {
+    color: #fff;
+    font-family: "montserrat", sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+h1 {
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    line-height: 57px;
+    color: white;
+}
+ /* Header section */
+.nav-item {
+    position: relative;
+    right: 25%;
+
+}
+
+.header {
+    background-color: #892cdc;
+}
+
+.logo {
+    width: 55px;
+    margin-left: 1rem;
+}
+
+.logo-text {
+    font-size: 2rem;
+    position: relative;
+    right: 20px;
+}
+
+.font1 {
+    font-family: 'Pacifico', cursive;
+}
+
+.font2 {
+    font-family: 'Righteous', cursive;
+}
+
+/* Navigation-Bar */
+
+.nav-custom {
+    box-shadow: 0 0 2px rgb(172, 168, 168);
+    color: black;
+}
+
+.nav-link {
+    text-decoration: none !important;
+    color: #fff;
+    margin: 0 27px;
+    position: relative;
+    right: 10%;
+    font-family: "montserrat";
+}
+.nav-link:hover {
+    border-bottom: 2px solid  red;
+}
+
+.navbar-brand {
+    margin-left: 5%;
+}
+
+
+.nav-dec-none {
+    text-decoration: none !important;
+}
+
+
+/* Title Section */
+
+#title {
+    background-color: #892cdc;
+    text-align: left;
+    padding: 3% 7% 1%;
+}
+
+.title-image {
+    width: 400px;
+    margin-left: 17%;
+}
+
+.title-image1 {
+    position: absolute;
+    width: 100%;
+    left: 17px;
+    
+}
+
+.container-fluid {
+    padding: 0 0;
+    
+}
+
+.title-heading h1 {
+    padding: 10% 7% 2% 0;
+    font-family: 'ubuntu', serif;
+    color: rgb(48, 47, 47);
+
+}
+.download-button {
+    margin-top: 40px;
+}
+
+.download-button:hover {
+    background-color: red;
+    color: #fff;
+    top: 2px;
+}
+
+
+.btn {
+    border-radius: 27px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.search-bar {
+    border-radius: 27px;
+    width: 50%;
+    flex: 0.5;
+    text-decoration: aliceblue  ;
+}
+.search-button {
+    background-color: red;
+    color: #fff;
+} 
+
+.title-heading h4 {
+    opacity: 0.4;
+    font-family: 'Ubuntu', sans-serif;
+    color: grey;
+}
+
+/* RankTable-Section */
+
+#RankTable {
+    position: relative;
+    /* height: 100%; */
+    width: 100%;
+    background-color: rgb(248, 249, 250);
+    color: gray;
+    padding: 5% 50px;
+
+
+}
+
+#RankTable h1 {
+    color: gray;
+    margin-bottom: 27px;
+}
+
+.RankerTable {
+    width: 100%;
+    background-color: white; 
+    border-radius: 10px;
+    padding: 5% 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.table-hover {
+    text-align: left;
+    margin-left: 250px;
+}
+#img-2 {
+    width: 400px;
+    padding: 10%;
+    margin-right: 40%;
+}
+.medal {
+    color: #892cdc;
+    margin-right: 7%;
+}
+.rank-text {
+    margin: 10px auto;
+}
+.rank-text:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    background-color: #892cdc;
+    color: #fff;
+
+}
+
+/* QUestion Paper section */
+
+#QuestionPaper {
+    background-color: #892cdc;
+    text-align: left;
+}
+
+.Question-paper-heading {
+    padding: 10% 10%;
+    
+
+}
+.Question-paper-heading h1 {
+    color: rgb(219, 212, 212);
+    font-family: 'ubuntu', serif;
+}
+
+.img-3 {
+    width: 50%;
+    margin: 17%;
+}
+
+/* Footer-Section */
+
+footer {
+    padding: 57px;
+    background-color: #fff;
+    color: #892cdc;
+    text-align: center;
+    font-size: 27px;
+}
+.footer-logo {
+    padding: 27px 17px;  
+}
+
+.footer-text {
+   margin: 17px;
+   color: #892cdc;
+   font-family: 'ubuntu', serif;
+}
+
+.copyright {
+    opacity: 0.7;
+}
